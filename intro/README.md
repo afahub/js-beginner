@@ -4,7 +4,7 @@
 
 - History, role in web development, and how it interacts with HTML and CSS.
 
-## Setting Up Environmen
+## Setting Up Environment
 
 Choosing and setting up a code editor (VSCode, Sublime Text), using the browser console.
 

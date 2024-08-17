@@ -4,6 +4,134 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Introduction to Javascript</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>Introduction to Javascript</h1>
+    <script>
+      // All my JS goes here...
+      // var
+      var name = "Peace";
+      var age = 23;
+      var isSaturday = true;
+      var nothing = null;
+      var empty = undefined;
+      // alert(`${typeof age}, ${typeof name}`);
+      name = "Lynn";
+      // console.log("Type of name is:", typeof name);
+      // console.log("Type of age is:", typeof age);
+      // console.log("Type of nothing is:", typeof empty);
+
+      // string
+      var myString = "Hello, World!";
+      console.log("Type of myString is:", typeof myString);
+      console.log("Length of myString is:", myString.length);
+      console.log("First character of myString is:", myString[12]);
+
+      console.log(
+        "Last character of myString is:",
+        myString[myString.length - 1]
+      );
+      console.log("MyString in uppercase is:", myString.toUpperCase());
+      console.log("MyString in lowercase is:", myString.toLowerCase());
+      console.log(
+        "MyString with replaced characters is:",
+        myString.replace("Hello", "Goodbye")
+      );
+      console.log("MyString with substring is:", myString.substring(0, 5));
+      console.log("MyString with substring is:", myString.substring(6));
+      console.log("MyString with substring is:", myString.substring(6, 11));
+
+      // string.replace
+
+      var myname = "My name is gabriel";
+
+      var myRealName = myname.replace("gabriel", "Peace");
+
+      console.log(myname);
+      console.log(myRealName);
+
+      // // number
+      // var myNumber = 1234567890;
+      // console.log("Type of myNumber is:", typeof myNumber);
+      // console.log("MyNumber in reverse is:", myNumber.toString().split("").reverse().join(""));
+      // console.log("MyNumber rounded to nearest hundred is:", Math.round(myNumber / 100) * 100);
+      // console.log("MyNumber rounded to nearest thousand is:", Math.round(myNumber / 1000) * 1000);
+      // console.log("MyNumber rounded to nearest ten thousand is:", Math.round(myNumber / 10000) * 10000);
+      // console.log("MyNumber squared is:", myNumber * myNumber);
+      // console.log("MyNumber cubed is:", myNumber **
+
+      // printing on the document using document.write function and document.writelines function
+      // document.write("<h2>Hello, World!</h2>");
+      // document.write("<p>My name is Peace</p>");
+      // document.write("<p>My age is " + age + "</p>");
+      // document.write("<p>Is it Saturday? " + isSaturday + "</p>");
+      // document.write("<p>My name is " + myRealName + "</p>");
+      // document.write("<p>My number squared is " + myNumber ** 2 + "</p>");
+      // document.write("<p>My number cubed is " + myNumber ** 3 + "</p>");
+      // document.writeln(
+      //   "<p>My number rounded to nearest hundred is " +
+      //     Math.round(myNumber / 100) * 100 +
+      //     "</p>"
+      // );
+      // document.write(
+      //   "<p>My number rounded to nearest thousand is " +
+      //     Math.round(myNumber / 1000) * 100
+      // );
+
+      // string concatenation
+
+      var myName = "Gabriel";
+      var myAge = 23;
+      var myCity = "New York";
+      var fullname = myname.concat(" Peace");
+      var secondName = "Peace";
+      var myMessage = "My name is " + fullname;
+      // document.write("<h3>" + myMessage + "</h3>");
+
+      // Literals
+      var mysecondFullName = `My name is ${myName} ${secondName}`;
+      document.write("<h3>" + mysecondFullName + "</h3>");
+
+      /** *
+       * string concatenation
+       *
+       *
+       *
+       *
+       */
+
+      // manipulating numbers
+
+      var myNumber = 20;
+      var mySecondNumber = 10;
+      var sum = myNumber + mySecondNumber;
+      var difference = myNumber - mySecondNumber;
+      var product = myNumber * mySecondNumber;
+      var quotient = myNumber / mySecondNumber;
+      var remainder = myNumber % mySecondNumber;
+      var power = myNumber ** 2;
+      var sqrt = Math.sqrt(myNumber);
+      //  var factorial = 1;
+
+      document.writeln(myNumber);
+      document.writeln("<p></p>");
+      document.writeln(mySecondNumber);
+      document.writeln("<p></p>");
+      document.write("Sum: " + sum);
+      document.writeln("<p></p>");
+      document.write("Difference: " + difference);
+      document.writeln("<p></p>");
+      document.write("Product: " + product);
+      document.writeln("<p></p>");
+      document.write("Quotient: " + quotient);
+      document.writeln("<p></p>");
+      document.write("Remainder: " + remainder);
+      document.writeln("<p></p>");
+      document.write("Power: " + power);
+      document.writeln("<p></p>");
+      document.write("Square root: " + sqrt);
+      //  document.write("Factorial: " + factorial)
+    </script>
+  </body>
 </html>
