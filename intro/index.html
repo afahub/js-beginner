@@ -91,10 +91,10 @@
 
       // Literals
       var mysecondFullName = `My name is ${myName} ${secondName}`;
-      document.write("<h3>" + mysecondFullName + "</h3>");
+      // document.write("<h3>" + mysecondFullName + "</h3>");
 
       /** *
-       * string concatenation
+       * strings, numbers, and booleans
        *
        *
        *
@@ -114,24 +114,96 @@
       var sqrt = Math.sqrt(myNumber);
       //  var factorial = 1;
 
-      document.writeln(myNumber);
-      document.writeln("<p></p>");
-      document.writeln(mySecondNumber);
-      document.writeln("<p></p>");
-      document.write("Sum: " + sum);
-      document.writeln("<p></p>");
-      document.write("Difference: " + difference);
-      document.writeln("<p></p>");
-      document.write("Product: " + product);
-      document.writeln("<p></p>");
-      document.write("Quotient: " + quotient);
-      document.writeln("<p></p>");
-      document.write("Remainder: " + remainder);
-      document.writeln("<p></p>");
-      document.write("Power: " + power);
-      document.writeln("<p></p>");
-      document.write("Square root: " + sqrt);
+      // document.writeln(myNumber);
+      // document.writeln("<p></p>");
+      // document.writeln(mySecondNumber);
+      // document.writeln("<p></p>");
+      // document.write("Sum: " + sum);
+      // document.writeln("<p></p>");
+      // document.write("Difference: " + difference);
+      // document.writeln("<p></p>");
+      // document.write("Product: " + product);
+      // document.writeln("<p></p>");
+      // document.write("Quotient: " + quotient);
+      // document.writeln("<p></p>");
+      // document.write("Remainder: " + remainder);
+      // document.writeln("<p></p>");
+      // document.write("Power: " + power);
+      // document.writeln("<p></p>");
+      // document.write("Square root: " + sqrt);
       //  document.write("Factorial: " + factorial)
+
+      // Objects in Javascript
+      // var person = {
+      //   name: "Gabriel",
+      //   age: 23,
+      //   city: "New York",
+      // };
+
+      var person = {
+        name: "Gabriel",
+        age: 23,
+        city: "New York",
+      };
+
+      // document.write(person.name);
+      // document.write("<p></p>");
+      // document.write(person.age);
+      // document.write("<p></p>");
+      // document.write(person.city);
+      // console.log(person);
+
+      // document.write("<h2>" + myObject.sayHello() + "</h2>");
+      // document.write("<h2>" + myObject.greet("Lynn") + "</h2>");
+      // document.write("<h2>" + myObject.calculateSum(10, 20) + "</h2>");
+      // console.log(myObject);
+      // console.log(myObject.name);
+
+      // Arrays in Javascript
+      // An array of fruits
+      var myArray = ["apple", "banana", "mango"];
+
+      document.write(myArray[0]);
+      document.write("<p></p>");
+
+      // Add a string to every element in the array called fruit
+      myArray.push("orange");
+      // Remove the last element from the array called fruit
+      myArray.pop();
+      // Add a string to the beginning of the array called fruit
+      myArray.unshift("grape");
+      // Remove the first element from the array called fruit
+      // myArray.shift();
+      // // Sort the array called fruit in alphabetical order
+      // myArray.sort();
+      // // Reverse the order of the elements in the array called fruit
+      // myArray.reverse();
+      // Concatenate all the elements in the array called fruit into a string called result
+      var result = myArray.join(", ");
+      document.write(result);
+      // console.log(myArray);
+      // console.log(result);
+
+      // myArray
+      // document.write(myArray[0]);
+      // document.write("<p></p>");
+      // document.write(myArray[1]);
+      // document.write("<p></p>");
+      // document.write(myArray[2]);
+      // document.write("<p></p>");
+      // document.write(myArray.join(", "));
+      // console.log(myArray);
+      // console.log(myArray.length);
+      // console.log(myArray.join(", "));
+      // console.log(myArray.reverse());
+      // console.log(myArray.push("orange"));
+      // console.log(myArray);
+      // console.log(myArray.pop());
+      // console.log(myArray);
+      // console.log(myArray.shift());
+      // console.log(myArray);
+      // console.log(myArray.unshift("grape"));
+      // console.log(my
     </script>
   </body>
 </html>
