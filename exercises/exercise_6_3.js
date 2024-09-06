@@ -29,10 +29,16 @@ function calculateWithSwitch(num1, num2, operator) {
   }
   return res;
 }
-
+// [
+//     6, 14,  24,  36, 50,
+//    66, 84, 104, 126
+//  ]
 const results = [];
+
 for (var i = 1; i < 10; i++) {
-  const result = calculateWithSwitch(3, 4, "+");
+  // instead of using + below, create an array to store the operators i.e. ['+', '-', ']
+  // for every iteration select a random index for the operator to use.
+  const result = calculateWithSwitch(i * 5, i * i, "+");
   results.push(result);
 }
 //[
