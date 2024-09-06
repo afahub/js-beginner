@@ -52,4 +52,4 @@ function tableGenerator() {
   return myTable;
 }
 
-console.log(tableGenerator());
+console.table(tableGenerator());
