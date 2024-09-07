@@ -8,9 +8,50 @@
   </head>
   <body>
     <h1>Introduction to Javascript</h1>
+    <div id="myptag"></div>
+    <input type="text" placeholder="Enter name" id="name" />
+    <button id="displayMessage" onclick="displayWelcomeMessage()">
+      Display message
+    </button>
+    <button id="displayMessage" onclick="changeDocumentTitle()">
+      Change Document Title
+    </button>
+    <form action=""></form>
+    <!-- <p>Hello world content here.</p>
+    <p>Hello world content here.</p> -->
+
     <script>
+      const body = document.getElementsByName("body")[0];
+      const myptag = document.getElementById("myptag");
+      const p = document.createElement("p");
+
+      function displayWelcomeMessage() {
+        const helloworld = document.getElementsByTagName("p");
+        const input = document.getElementById("name");
+        const h1 = document.getElementsByName("h1")[0];
+        // an array of all p tags in your document []
+        p.textContent = "WElcome Loic";
+        const name = input.value;
+        p.textContent = "Welcome " + name;
+        myptag.appendChild(p);
+        // body.rem(h1);
+        h1.remove();
+      }
+
+      function changeDocumentTitle() {
+        const helloworld = document.getElementsByTagName("p");
+        const input = document.getElementById("name");
+        // an array of all p tags in your document []
+        helloworld[0].textContent = "WElcome Loic";
+        const name = input.value;
+        document.title = "Welcome to my website " + name + "!";
+      }
+      /// a string = "33"
+      // string to int in python
+
       // All my JS goes here...
       // var
+
       var name = "Peace";
       var age = 23;
       var isSaturday = true;
@@ -163,7 +204,7 @@
       // An array of fruits
       var myArray = ["apple", "banana", "mango"];
 
-      document.write(myArray[0]);
+      // document.write(myArray[0]);
       document.write("<p></p>");
 
       // Add a string to every element in the array called fruit
@@ -180,7 +221,7 @@
       // myArray.reverse();
       // Concatenate all the elements in the array called fruit into a string called result
       var result = myArray.join(", ");
-      document.write(result);
+      // document.write(result);
       // console.log(myArray);
       // console.log(result);
 
